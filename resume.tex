@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Nihal Athikkai
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+% \documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Nihal Athikkai} \\ \vspace{1pt}
+    \small 949-667-5926 $|$ \href{mailto:nihalathikkai1999@gmail.com}{\underline{nihalathikkai1999@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/nihal-athikkai/}{\underline{linkedin.com/in/nihal-athikkai}}  $|$ \small Bangalore
+    %  $|$ \href{https://github.com/...}{\underline{github.com/nihal}}
+\end{center}
+
+
+
+\section{Professional Summary}
+Software Engineer with 4+ years of experience specializing in backend development, data processing, and cloud solutions using Python, SQL, and AWS. Skilled in building scalable systems and optimizing workflows for business efficiency.
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Project Engineer}{June 2021 -- Present}
+      {Wipro Ltd.}{Bangalore, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Developed and optimized Python FastAPI backend for an internal portal used by 400+ global users to manage \emph{Quality Standard System (QSS)} scenarios and test cases, reducing approval time by {{XX}}\%.}
+        \resumeItem{Implemented advanced Excel file parsing and validation logic, improving data processing efficiency by {{XX}}\%.}
+        \resumeItem{Designed and deployed tracking mechanisms for scenario statuses, resource allocation, and time estimation, enhancing project visibility by {{XX}}\%.}
+        \resumeItem{Migrated REST API from Flask to FastAPI, boosting API performance by 2.5x through code optimization and concurrency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Intern}{Dec 2019 -- Dec 2019}
+      {Kerala Minerals and Metals Ltd.}{Kollam, Kerala}
+      \resumeItemListStart
+        \resumeItem{Conducted a detailed study of titanium-dioxide pigment production processes, gaining insights into large-scale manufacturing workflows.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Summer Research Fellow}{May 2019 -- July 2019}
+      {IIT Ropar}{Ropar, Punjab}
+      \resumeItemListStart
+        \resumeItem{Developed a GUI for CNC toolpath generation in the SPIF process using MATLAB App Designer, reducing toolpath generation time by {{XX}}\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Social Media API Service} $|$ \emph{Go, PostgreSQL, Git}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a RESTful API service for a social media application, enabling user authentication, post creation, and interaction features.}
+            \resumeItem{Implemented PostgreSQL database schema for efficient data storage and retrieval.}
+            \resumeItem{Utilized Go's concurrency features to handle multiple API requests simultaneously.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology Calicut}{Calicut, Kerala}
+      {Bachelor of Technology in Mechanical Engineering}{July 2017 -- June 2021}
+    \resumeSubheading
+      {Sarvodaya Central Vidyalaya}{Thiruvananthapuram, Kerala}
+      {Higher Secondary Certificate, PCMC}{June. 2015 -- March 2017}
+  \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL (MySQL), Go} \\
+     \textbf{Frameworks}{: FastAPI, Flask, Pydantic, LangChain} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Postman} \\
+     \textbf{Platforms}{: AWS (CloudFormation CDK, MWAA, EMR, RDS, Glue)} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, OpenPyXL} \\
+     \textbf{Tools}{: MATLAB, SOLIDWORKS, Fusion 360}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
