@@ -91,7 +91,7 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-8pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
@@ -117,7 +117,7 @@
 
 \section{Professional Summary}
 Software Engineer with 4+ years of experience specializing in backend development, data processing, and cloud solutions using Python, SQL, and AWS. Skilled in building scalable systems and optimizing workflows for business efficiency.
-
+% \vspace{-7pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -126,11 +126,42 @@ Software Engineer with 4+ years of experience specializing in backend developmen
     \resumeSubheading
       {Project Engineer}{June 2021 -- Present}
       {Wipro Ltd.}{Bangalore, Karnataka}
+      \resumeSubHeadingListStart
+        \resumeSubItem{Apple (\emph{QSS}) $|$ \emph{Developer L3}}
+      \resumeSubHeadingListEnd
       \resumeItemListStart
-        \resumeItem{Developed and optimized Python FastAPI backend for an internal portal used by 400+ global users to manage \emph{Quality Standard System (QSS)} scenarios and test cases, reducing approval time by {{XX}}\%.}
-        \resumeItem{Implemented advanced Excel file parsing and validation logic, improving data processing efficiency by {{XX}}\%.}
-        \resumeItem{Designed and deployed tracking mechanisms for scenario statuses, resource allocation, and time estimation, enhancing project visibility by {{XX}}\%.}
-        \resumeItem{Migrated REST API from Flask to FastAPI, boosting API performance by 2.5x through code optimization and concurrency.}
+        \resumeItem{Developed and optimized Python \textbf{FastAPI} backend (using \textbf{MySQL}, \textbf{Box}, and \textbf{Docker}) for an internal portal used by 700+ global business users to manage \emph{Quality Standard System (QSS)} scenarios and test cases.}
+        \resumeItem{Implemented advanced Excel file parsing, validation and data extraction logic with \textbf{OpenPyXL} and \textbf{pandas}.}
+        \resumeItem{Designed and deployed tracking mechanisms for scenario statuses, resource allocation, and time estimation and other key metrics enhancing project visibility.}
+        \resumeItem{Migrated REST API from \textbf{Flask} to \textbf{FastAPI}, boosting API performance by 2.5\(\times\)  through code optimization and concurrency.}
+      \resumeItemListEnd
+      \vspace{-5pt}
+
+      \resumeSubHeadingListStart
+        \resumeSubItem{Apple (\emph{Marketing Measurements Engineering}) $|$ \emph{Developer L2}}
+      \resumeSubHeadingListEnd
+      \resumeItemListStart
+        \resumeItem{Deployed and managed \textbf{AWS Glue} crawlers with \textbf{AWS MWAA} to extract metadata from CSV data stored in S3, leveraging \textbf{AWS CloudFormation} (using AWS CDK, AWS SDK and Python).}
+        \resumeItem{Implemented metadata registration and change monitoring system, notifying users of updates via \textbf{AWS SNS}.}
+        \resumeItem{Created Jenkins pipelines to automate testing and deployment of the CDK stacks.}
+        \resumeItem{Developed Python script for deploying customizable AWS CloudFormation stacks, including RDS instances and NLBs.}
+      \resumeItemListEnd
+      \vspace{-5pt}
+
+      \resumeSubHeadingListStart
+        \resumeSubItem{Nike $|$ \emph{Developer L1}}
+      \resumeSubHeadingListEnd
+      \resumeItemListStart
+        \resumeItem{Worked on POC in SAP DI wherein created graphs (data pipelines) to egress data from various sources, modify with a custom Python Operators and load it into Kafka and SAP HANA systems}
+      \resumeItemListEnd
+      \vspace{-5pt}
+
+      \resumeSubHeadingListStart
+        \resumeSubItem{HSBC $|$ \emph{Developer L1}}
+      \resumeSubHeadingListEnd
+      \resumeItemListStart
+        \resumeItem{Worked on POC with PySpark to process and analyze input files, used AWS EMR clusters to run various data processing PySpark applications.}
+        \resumeItem{Created Apache Airflow DAG to get user data and store it in a SQL database.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -146,21 +177,38 @@ Software Engineer with 4+ years of experience specializing in backend developmen
       \resumeItemListStart
         \resumeItem{Developed a GUI for CNC toolpath generation in the SPIF process using MATLAB App Designer, reducing toolpath generation time by {{XX}}\%.}
       \resumeItemListEnd
-
+    \vspace{2pt}
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Social Media API Service} $|$ \emph{Go, PostgreSQL, Git}}{}
-          \resumeItemListStart
-            \resumeItem{Developed a RESTful API service for a social media application, enabling user authentication, post creation, and interaction features.}
-            \resumeItem{Implemented PostgreSQL database schema for efficient data storage and retrieval.}
-            \resumeItem{Utilized Go's concurrency features to handle multiple API requests simultaneously.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%       {\textbf{Social Media API Service} $|$ \emph{Go, PostgreSQL, Git}}{}
+%       \resumeItemListStart
+%         \resumeItem{Developed a RESTful API service for a social media application, enabling user authentication, post creation, and interaction features.}
+%         \resumeItem{Implemented PostgreSQL database schema for efficient data storage and retrieval.}
+%         \resumeItem{Utilized Go's concurrency features to handle multiple API requests simultaneously.}
+%       \resumeItemListEnd
+%     \vspace{2pt}
+%   \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+      \small{\item{
+          \begin{tabular}{l @{\hskip 10pt} l}
+              \textbf{Languages} & Python, SQL (MySQL), Go. \\
+              \textbf{Frameworks} & FastAPI, Flask, Pydantic, LangChain. \\
+            \textbf{Developer Tools} & Git, Docker, VS Code, Postman, AWS CDK. \\
+            \textbf{Platforms} & AWS (CloudFormation, MWAA, EMR, RDS, Glue). \\
+            \textbf{Libraries} & pandas, NumPy, Matplotlib, OpenPyXL. \\
+            \textbf{Tools} & MATLAB, SOLIDWORKS, Fusion 360.
+        \end{tabular}
+      }}
+  \resumeSubHeadingListEnd
 
 
 %-----------EDUCATION-----------
@@ -172,23 +220,8 @@ Software Engineer with 4+ years of experience specializing in backend developmen
     \resumeSubheading
       {Sarvodaya Central Vidyalaya}{Thiruvananthapuram, Kerala}
       {Higher Secondary Certificate, PCMC}{June. 2015 -- March 2017}
+    \vspace{2pt}
   \resumeSubHeadingListEnd
-
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, SQL (MySQL), Go} \\
-     \textbf{Frameworks}{: FastAPI, Flask, Pydantic, LangChain} \\
-     \textbf{Developer Tools}{: Git, Docker, VS Code, Postman} \\
-     \textbf{Platforms}{: AWS (CloudFormation CDK, MWAA, EMR, RDS, Glue)} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib, OpenPyXL} \\
-     \textbf{Tools}{: MATLAB, SOLIDWORKS, Fusion 360}
-    }}
- \end{itemize}
 
 
 %-------------------------------------------
